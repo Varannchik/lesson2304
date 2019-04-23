@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 200px 200px 200px 200px;
+      grid-template-rows: 200px 200px 200px 200px;
+  -ms-grid-columns: 200px 200px 200px 200px 200px 200px;
+      grid-template-columns: 200px 200px 200px 200px 200px 200px;
+  grid-gap: 10px;
+      grid-template-areas: 'f b b b b f' 'f b b b b f' 'f b b b b f' 'm m c c m m';
+}
+
+.container .first {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 6;
+  grid-area: f;
+}
+
+.container .three {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 6;
+  grid-area: f;
+}
+
+.container .four {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 6;
+  grid-area: f;
+}
+
+.container .five {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 6;
+  grid-area: f;
+}
+
+.container .six {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 6;
+  grid-area: f;
+}
+
+.container .seven {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 6;
+  grid-area: f;
+}
+
+.container .second {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 3;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 4;
+  grid-area: b;
+}
+
+.container .eight {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 6;
+  grid-area: m;
+}
+
+.container .ten {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 6;
+  grid-area: m;
+}
+
+.container .nine {
+  -ms-grid-row: 4;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 2;
+  grid-area: c;
+}
+
+.container p {
+  border: 1px solid black;
+  padding: 20px 10px;
+  word-wrap: break-word;
+}
+
+.container p span {
+  font-weight: bold;
+}
+
+.orange {
+  background: orange;
+}
+
+.pink {
+  background: pink;
+}
+
+@-webkit-keyframes move {
+  0% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes move {
+  0% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes moveMain {
+  0% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes moveMain {
+  0% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+/*# sourceMappingURL=style.css.map */
