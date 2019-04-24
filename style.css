@@ -124,4 +124,12 @@
             transform: rotate(360deg);
   }
 }
+
+@media (max-width: 480px) {
+  .container {
+    -ms-grid-rows: (1fr)[5];
+        grid-template-rows: repeat(5, 1fr);
+        grid-template-areas: "bb bb bb bb bb bb" "bb bb bb bb bb bb" "bb bb bb bb bb bb"  "aa cc dd ee ff gg"  "hh hh mm mm kk kk";
+  }
+}
 /*# sourceMappingURL=style.css.map */

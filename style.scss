@@ -85,6 +85,8 @@
             font-weight: bold;
         }
     }
+
+   
 }
 // .first, .three, .four, .five, .six, .seven{
 //     grid-area: ff;        
@@ -114,3 +116,16 @@
     0%{
         transform: rotate(360deg);}
 }
+
+@media (max-width: 480px){
+       .container{
+        grid-template-rows:repeat(5, 1fr);
+        grid-template-areas:
+        "bb bb bb bb bb bb"
+        "bb bb bb bb bb bb"
+        "bb bb bb bb bb bb" 
+        "aa cc dd ee ff gg" 
+        "hh hh mm mm kk kk"; 
+       } 
+}
+
