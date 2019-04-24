@@ -6,60 +6,18 @@
 .container {
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: 200px 200px 200px 200px;
-      grid-template-rows: 200px 200px 200px 200px;
-  -ms-grid-columns: 200px 200px 200px 200px 200px 200px;
-      grid-template-columns: 200px 200px 200px 200px 200px 200px;
+  -ms-grid-rows: (1fr)[4];
+      grid-template-rows: repeat(4, 1fr);
+  -ms-grid-columns: (1fr)[6];
+      grid-template-columns: repeat(6, 1fr);
   grid-gap: 10px;
-      grid-template-areas: 'f b b b b f' 'f b b b b f' 'f b b b b f' 'm m c c m m';
+      grid-template-areas: "aa bb bb bb bb cc" "dd bb bb bb bb ee"  "ff bb bb bb bb gg"  "hh hh mm mm kk kk";
 }
 
 .container .first {
   -ms-grid-row: 1;
-  -ms-grid-row-span: 3;
   -ms-grid-column: 1;
-  -ms-grid-column-span: 6;
-  grid-area: f;
-}
-
-.container .three {
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 3;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 6;
-  grid-area: f;
-}
-
-.container .four {
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 3;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 6;
-  grid-area: f;
-}
-
-.container .five {
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 3;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 6;
-  grid-area: f;
-}
-
-.container .six {
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 3;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 6;
-  grid-area: f;
-}
-
-.container .seven {
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 3;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 6;
-  grid-area: f;
+  grid-area: aa;
 }
 
 .container .second {
@@ -67,28 +25,58 @@
   -ms-grid-row-span: 3;
   -ms-grid-column: 2;
   -ms-grid-column-span: 4;
-  grid-area: b;
+  grid-area: bb;
+}
+
+.container .three {
+  -ms-grid-row: 1;
+  -ms-grid-column: 6;
+  grid-area: cc;
+}
+
+.container .four {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: dd;
+}
+
+.container .five {
+  -ms-grid-row: 2;
+  -ms-grid-column: 6;
+  grid-area: ee;
+}
+
+.container .six {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: ff;
+}
+
+.container .seven {
+  -ms-grid-row: 3;
+  -ms-grid-column: 6;
+  grid-area: gg;
 }
 
 .container .eight {
   -ms-grid-row: 4;
   -ms-grid-column: 1;
-  -ms-grid-column-span: 6;
-  grid-area: m;
-}
-
-.container .ten {
-  -ms-grid-row: 4;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 6;
-  grid-area: m;
+  -ms-grid-column-span: 2;
+  grid-area: hh;
 }
 
 .container .nine {
   -ms-grid-row: 4;
   -ms-grid-column: 3;
   -ms-grid-column-span: 2;
-  grid-area: c;
+  grid-area: mm;
+}
+
+.container .ten {
+  -ms-grid-row: 4;
+  -ms-grid-column: 5;
+  -ms-grid-column-span: 2;
+  grid-area: kk;
 }
 
 .container p {
